@@ -1,7 +1,12 @@
 # information-solver
 AI supported PDF reading and summarisation. 
 
-It creates 3 level summaries. Uses chunks for summarising tens of pages.
+It creates 3 level summaries. Uses chunks for summarising tens of pages. Have two folder creatins. One is for JSONs: Memory_Bank, other is for PDFs: PDFs.
+
+It uses qwen3:4b models that is fast and efficient for local uses. No subscription, no cost per token. Just download Ollama and use command prompt to write:
+cmd: ollama pull qwen3:4b 
+then you are ready.
+
 
 First level: Chunks based summary. All chunks summarised.
 
