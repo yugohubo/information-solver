@@ -5,7 +5,14 @@ It creates 3 level summaries. Uses chunks for summarising tens of pages. Have tw
 
 It uses qwen3:4b models that is fast and efficient for local uses. No subscription, no cost per token. Just download Ollama and use command prompt to write:
 cmd: ollama pull qwen3:4b 
-then you are ready.
+
+then you can use modelfiles given and cmd prompt:
+
+cmd: ollama create info-solver -f ./ModelFile 
+
+in the folder for creating info-solver model.
+
+Do this for each model in the python file with given modelfiles. And you are set.
 
 
 First level: Chunks based summary. All chunks summarised.
