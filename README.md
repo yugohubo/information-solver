@@ -1,0 +1,12 @@
+# information-solver
+AI supported PDF reading and summarisation. 
+
+It creates 3 level summaries. Uses chunks for summarising tens of pages.
+
+First level: Chunks based summary. All chunks summarised.
+
+Second level: Combines chunks summaries gets the essence of all of them. This is saved as pdf in PDFs file
+
+Third level: Outputs a JSON file with name, keywords, essence keys for further data mining operations.
+
+Potential uses: Data mining, AI learning from text, memory creation for AI, self learner enthusiasts can use it to archive summaries of their PDF works.
