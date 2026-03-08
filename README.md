@@ -22,3 +22,34 @@ Second level: Combines chunks summaries gets the essence of all of them. This is
 Third level: Outputs a JSON file with name, keywords, essence keys for further data mining operations.
 
 Potential uses: Data mining, AI learning from text, memory creation for AI, self learner enthusiasts can use it to archive summaries of their PDF works.
+
+
+# Information Solver: Two-Tier Memory Extraction Pipeline
+
+A local, AI-powered PDF analysis and summarization tool built with Python, Streamlit, and **Ollama**. This project serves as a cognitive memory extraction module (originally designed for the DEUS agentic architecture). 
+
+It processes complex documents using custom-tuned local LLMs (`qwen3:4b`) to extract semantic essence, keywords, and deep summaries, ultimately storing them in a structured, two-tier JSON memory bank.
+
+## 🚀 Key Features
+
+* **100% Local AI Processing:** Complete data privacy and zero API costs using local Ollama models.
+* **Custom Model Pipeline:** Utilizes distinct, task-specific `Modelfiles` with strict deterministic parameters (e.g., Temperature 0.0) to ensure reliable JSON outputs and prevent hallucination.
+* **Two-Tier Cognitive Memory:** Automatically generates a Master Memory Map for each document:
+  * **Shallow Layer:** Contains semantic essence and exact keywords (Optimized for fast Vector DB / ChromaDB searches).
+  * **Deep Layer:** Contains structured, bulleted summaries for deep conceptual reading.
+* **Automated Chunking:** Handles large PDF files effortlessly by chunking text (1500 words) and synthesizing the pieces incrementally.
+* **Streamlit Interface:** A clean, user-friendly GUI to upload PDFs and track the multi-stage analysis progress in real-time.
+
+## 📂 Project Structure & Modelfiles
+
+The system employs a multi-agent approach where different instances of the model handle specific extraction tasks:
+* `information_solver.py`: The core Streamlit application and pipeline orchestrator.
+* `ModelFile_infosolver`: Synthesizes multiple text chunks into a highly coherent English summary.
+* `ModelFile_complex`: Understands core concepts and synthesizes deep, bulleted conclusions.
+* `ModelFile_json` & `ModelFile`: Strictly outputs machine-readable JSON formats (`name`, `essence`, `keywords`) without conversational filler.
+
+## 🛠️ Prerequisites
+
+* Python 3.8+
+* [Ollama](https://ollama.ai/) installed on your local machine.
+* `qwen3:4b` model pulled via Ollama (`ollama pull qwen3:4b`).
