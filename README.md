@@ -23,6 +23,7 @@ Third level: Outputs a JSON file with name, keywords, essence keys for further d
 
 Potential uses: Data mining, AI learning from text, memory creation for AI, self learner enthusiasts can use it to archive summaries of their PDF works.
 
+<img width="904" height="583" alt="Ekran görüntüsü 2026-03-10 110225" src="https://github.com/user-attachments/assets/e27da401-82fb-4e23-829c-e2424e8221d8" />
 
 # Information Solver: Two-Tier Memory Extraction Pipeline
 
