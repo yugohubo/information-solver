@@ -29,6 +29,10 @@ Potential uses: Data mining, AI learning from text, memory creation for AI, self
 
 <img width="904" height="583" alt="Ekran görüntüsü 2026-03-10 110225" src="https://github.com/user-attachments/assets/e27da401-82fb-4e23-829c-e2424e8221d8" />
 
+
+<img width="982" height="653" alt="Ekran görüntüsü 2026-03-10 110458" src="https://github.com/user-attachments/assets/3777de0d-ef30-408a-a0e3-a6d8f65f70d3" />
+
+
 # Information Solver: Two-Tier Memory Extraction Pipeline
 
 A local, AI-powered PDF analysis and summarization tool built with Python, Streamlit, and **Ollama**. This project serves as a cognitive memory extraction module (originally designed for the DEUS agentic architecture). 
